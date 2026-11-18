@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            transition: all 1s;
+            color: green;
+        }
+h1:hover{
+    color: pink;
+    background-color: yellow;
+}
+    h2:active{
+        color:orangered;
+        font-size: 45px;
+    }    
+    h3:focus{
+        color: purple;
+        outline: 2px solid olive;
+    }
+    .parent h1,.parent >p{
+        color: goldenrod;
+    }
+    h1, p{
+        color: pink;
+    }
+    </style>
+</head>
+<body>
+        <h1> World-Name</h1>
+        <h2>Student</h2>
+        <h3 tabindex="0">School</h3>
+
+        <div class="parent">
+            <h1>Small</h1>
+            <p>Firt paragraph</p>
+            <div>
+                <p>second paragraph </p>
+            </div>
+        </div>
+</body>
+</html>
